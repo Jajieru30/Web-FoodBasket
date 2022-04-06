@@ -1,0 +1,37 @@
+﻿@page
+@model Web_FoodBasket.Pages.LogInModel
+@{
+    ViewData["Title"] = "Log In Page";
+}
+<div style="width:400px; margin: auto;">
+    <img src="~/images/fb.png" style="height:35px;width:35px;display:block; margin:auto; margin-bottom:10px" />
+    <h4 style="text-align:center">Food Basket</h4>
+   <form>
+     <div class ="form-outline mb-4">
+         <input type="text" id="txtUsername" class="form-control m-3"  placeholder="Username"/>
+         <input type="password" id="txtPassword" class="form-control m-3" placeholder="Password"/>
+         
+
+
+   
+       
+        <input type="button" id="btnCreateAccount" class="btn btn-success " value="Log In" style="display:block; width:300px; margin:auto"/>
+        <p style="text-align:center" > Sign in using: </p> 
+
+        <div style="text-align:center">
+            <button type="button" class="btn btn-primary mt-1"  style="width:80px;">
+                <img src="~/images/fb.png" style="height:35px;width:35px;"/>
+            </button>
+            <button type="button" class="btn btn-light mt-1"  style="width:80px;">
+                <img src="~/images/google.png" style="height:35px;width:35px;"/>
+            </button>
+             <button type="button" class="btn btn-secondary mt-1"  style="width:80px;">
+                <img src="~/images/apple.png" style="height:35px;width:35px;"/>
+            </button>
+       </div>
+      
+     </div>
+
+       
+   </form>
+</div>

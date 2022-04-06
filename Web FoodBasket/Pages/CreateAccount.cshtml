@@ -1,0 +1,44 @@
+﻿@page
+@model Web_FoodBasket.Pages.CreateAccountModel
+@{
+     ViewData["Title"] = "Create New Account";
+}
+}
+
+<div style="width:400px; margin: auto;">
+    <img src="~/images/fb.png" style="height:35px;width:35px;display:block; margin:auto"/>
+    <h4 style="text-align:center">Create New Account</h4>
+   <form>
+     <div class ="form-outline mb-4">
+         <input type="text" id="txtFirstName" class="form-control m-3"  placeholder="First Name"/>
+         <input type="text" id="txtLastName" class="form-control m-3" placeholder="Last Name"/>
+         <input type="text" id="txtContact" class="form-control m-3" placeholder="Contact Number"/>
+        <select class="form-select m-3" id="txtGender">
+            <option selected disabled> Select your gender. </option>
+            <option value="Male"> Male </option>
+             <option value="Female"> Female </option>
+
+
+        </select>
+        <input type="text" id="txtAddress" class="form-control m-4" placeholder="Address"/>
+        <input type="button" id="btnCreateAccount" class="btn btn-success " value="Create Account" style="display:block; width:300px; margin:auto"/>
+        <span> Sign up using: </span>
+        <button type="button" class="btn btn-primary mt-1"  style="width:80px;">
+            <img src="~/images/fb.png" style="height:35px;width:35px;"/>
+
+        </button>
+        <button type="button" class="btn btn-light mt-1"  style="width:80px;">
+            <img src="~/images/google.png" style="height:35px;width:35px;"/>
+
+        </button>
+         <button type="button" class="btn btn-secondary mt-1"  style="width:80px;">
+             <img src="~/images/apple.png" style="height:35px;width:35px;"/>
+
+        </button>
+       
+      
+     </div>
+
+       
+   </form>
+</div>
